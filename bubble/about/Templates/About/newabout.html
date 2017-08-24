@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+<title> Bubble </title>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Shade|Exo" rel="stylesheet">
+<link rel = "stylesheet" href ="{% static 'css/omg.css' %}">
+</head>
+<body>
+<h1 id = bubs>
+  <button class= bubs><a href= "http://127.0.0.1:8000/"target="_blank" id = booble>Bubble</a></button>
+</h1>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul id = navi>
+      <div class="dropdown">
+        <button class="dropbtn">Articles</button>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:8000/RN/">Spotlight</a>
+          <a href="http://127.0.0.1:8000/Spotlight/">RN</a>
+        </div>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/peepthis/" id = peeps>Peep This</a></button>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/polls/" id = pool>Polls</a></button>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/about/" id = abouts>About Us</a></button>
+      </div>
+    </div>
+  </div>
+
+
+        <div class = flex-container-al>
+          <div class = allalex>
+            <h3 id = "alex"> Meet Alex </h3>
+            <img id = alexpic src="{% static "alex.jpg" %}" alt="Alex"></img>
+            <p id = "alexinfo">Alex Celedon is a junior at Archbishop Molloy High School. For all of her life, Alex has lived in Queens, one of the most diverse places in America. Alex can no longer standby and watch people act discriminatory towards women of color.  She hopes to use technology to end stereotypes and have a positive impact on other women like herself.  </p>
+          </div>
+          <div class = allalexis>
+            <h3 id = "alexis"> Meet Alexis </h3>
+            <img id = alexispic src="{% static "alexis.jpg" %}"alt="Alexis">
+            <p id = "alexisinfo">Alexis Williams was born on May 14 and was raised in northern New Jersey. She loves school and challenging herself with AP and honors classes. Alexis always finds things to do for fun whether it be writing, reading, singing, dancing, or more. Her favorite activities include singing and dancing to music, writing prose and sonnets, reading books. Coming from a town that is predominantly Caucasian, she wanted to be a part of something that would create a safe haven for black women filled with love, unity, and positivity, which is how Bubble was born.  </p>
+          </div>
+        </div>
+        <div class = flex-container-armi>
+          <div class = allariah>
+            <h3 id = "ariah"> Meet Ariah </h3>
+            <img id = ariahpic src="{% static "ariah.jpg" %}"alt="Ariah">
+            <p id = "ariahinfo">Ariah's 17 and attending a college preparatory boarding school with an appalling lack of diversity. Likes include: probiotic bevs, peaches, guitar, and colors. Dislikes: the current state of this country's political stance on very real issues, global warming, the patriarchy, and animal products. Reach her @roseariah on ig </p>
+          </div>
+            <div class = allmiriam>
+              <h3 id = "miriam"> Meet Miriam </h3>
+              <img id = miriampic src="{% static "miriam.jpg" %}"alt="Miriam">
+              <p id = "miriaminfo">Miriam Shapir is a 16 year old rising junior in high school. She was born and raised in Brooklyn, New York in a modern orthodox Jewish home. From subways to summer camps, she has been looked at or treated differently because of her religion. Her hobbies include weight-lifting and reading. She is also very interested in entering the technology industry in the future.</p>
+          </div>
+        </div>
+        <h1 id = purpose> Purpose </h1>
+        <p id = purpose-info> Bubble exists as an online community of women of color dedicated to celebrating each other's successes. This blog is to promote positivity and unity among women of color. This is done by posting articles with positive news, achievements, and promoting small businesses.  </p>
+      <div class = contact-us>
+        <h2 id= contacts> Contact Us </h2>
+          <ul class = contact-info>
+            <li id= email1> aceledon333@gmail.com </li>
+            <li id= email2> lexywilliams2019@gmail.com </li>
+            <li id= email3> ariahrose@gmail.com </li>
+            <li id= email4> miriamshapir@aol.com </li>
+          </ul>
+      </div>
+      </body>
+      </html>

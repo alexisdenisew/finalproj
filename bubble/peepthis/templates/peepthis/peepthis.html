@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+<title> Bubble </title>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Shade|Exo" rel="stylesheet">
+<link rel = "stylesheet" href ="{% static 'css/peepers.css' %}">
+</head>
+<body>
+<h1 id = bubs>
+  <button class= bubs><a href= "http://127.0.0.1:8000/"target="_blank" id = booble>Bubble</a></button>
+</h1>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul id = navi>
+      <div class="dropdown">
+        <button class="dropbtn">Articles</button>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:8000/RN/">Spotlight</a>
+          <a href="http://127.0.0.1:8000/Spotlight/">RN</a>
+        </div>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/peepthis/" id = peeps>Peep This</a></button>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/polls/" id = pool>Polls</a></button>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/about/" id = abouts>About Us</a></button>
+      </div>
+    </div>
+  </div>
+
+<div class = 'shea'>
+<h3> <a href="https://kyrasheamedleys.com/" id = titleky> Kyra's Shea Medley</a> </h3>
+<img id = 'sheamed' src="{% static "sheamedley.jpg" %}"alt="shea">
+<p>Kyra's Shea Medley combines unrefined Shea Butter with other natural ingredients such as raw butters, essential oils, carrier oils, and botanical extracts, all products from Kyra's Shea Medleys are hand-whipped to perfection and are multipurpose. All ingredients are organic in that they are not chemical-based, but naturally and ethically made. Each jar is made with you in mind, handcrafted with care and love in their hometown of Los Angeles, CA. Each ingredient performs a function essential to the success of the products' whole. Moisture, softness, strength, and nutrition are what Kyra's Shea Medleys promote and are exactly what you get. To buy their products click <a href="https://kyrasheamedleys.com/" id = 'kyra'>here.</a> </p>
+</div>

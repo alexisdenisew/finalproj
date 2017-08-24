@@ -1,0 +1,50 @@
+{% extends 'blog/base.html' %}
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+<title> Bubble </title>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Shade|Exo" rel="stylesheet">
+<link rel = "stylesheet" href ="{% static 'css/frustration.css' %}">
+</head>
+<body>
+<h1 id = bubs>
+  <button class= bubs><a href= "http://127.0.0.1:8000/"target="_blank" id = booble>Bubble</a></button>
+</h1>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul id = navi>
+      <div class="dropdown">
+        <button class="dropbtn">Articles</button>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:8000/RN/">Spotlight</a>
+          <a href="http://127.0.0.1:8000/Spotlight/">RN</a>
+        </div>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/peepthis/">Peep This</a></button>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/polls/">Polls</a></button>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/about/">About Us</a></button>
+      </div>
+    </div>
+  </div>
+
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}

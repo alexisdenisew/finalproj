@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+<title> Bubble </title>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Shade|Exo" rel="stylesheet">
+<link rel = "stylesheet" href ="{% static 'css/spotted.css' %}">
+</head>
+<body>
+<h1 id = bubs>
+  <button class= bubs><a href= "http://127.0.0.1:8000/"target="_blank" id = booble>Bubble</a></button>
+</h1>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul id = navi>
+      <div class="dropdown">
+        <button class="dropbtn">Articles</button>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:8000/RN/">Spotlight</a>
+          <a href="http://127.0.0.1:8000/Spotlight/">RN</a>
+        </div>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/peepthis/" id = peeps>Peep This</a></button>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/polls/" id = pool>Polls</a></button>
+      </div>
+      <div class= "none">
+        <button class= "none"><a href ="http://127.0.0.1:8000/about/" id = abouts>About Us</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h3> College-Ish</h3>
+    <p>Black-ish's Yara Shahidi is confirmed to star the show's spin off "College-ish" for Freefrom in the fall. The show is rumored to star a few of the other actors from Black-ish as well. The show will soon follow Yara's character Zoe as she makes her way through college.</P>
+    <h3>Upcoming Harvard Class</h3>
+    <p> According to Boston Globe 50.8 percent of freshman at Harvard this coming fall are non-white. This percentage has been climbing since 2010. As well as many other colleges in the Massachusettes area. </P>
+    <h3>Girls Who Code Graphic Novel</h3>
+    <p> Reshma Saujani has published her graphic novel "Girls Who Code" meant to empower and inspire young girls to join the tech feild. She presented her book at Barnes and Noble during the Girls Who Code Women in STEM rally at Union Square on August 22nd.</P>
+    </div>
